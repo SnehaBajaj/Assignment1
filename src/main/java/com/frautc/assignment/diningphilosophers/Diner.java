@@ -1,4 +1,4 @@
-package diningphilosophers;
+package com.frautc.assignment.diningphilosophers;
 
 public class Diner implements Runnable {
 
@@ -12,10 +12,9 @@ public class Diner implements Runnable {
 
     private void doAction(String action) throws InterruptedException {
         System.out.println(Thread.currentThread().getName() + action);
-        Thread.sleep(((int) (Math.random() * 100)));
+        Thread.sleep(((int) (Math.random() * 1000)));
     }
 
-    @Override
     public void run() {
         try {
             while (true) {

@@ -1,4 +1,4 @@
-package diningphilosophers;
+package com.frautc.assignment.diningphilosophers;
 
 public class ConcurrentRestaurant {
 
