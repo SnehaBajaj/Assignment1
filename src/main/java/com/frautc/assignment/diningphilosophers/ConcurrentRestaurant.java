@@ -1,5 +1,8 @@
 package com.frautc.assignment.diningphilosophers;
 
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+
 public class ConcurrentRestaurant {
 
     public static void main(String[] args) throws Exception {
@@ -10,6 +13,9 @@ public class ConcurrentRestaurant {
         for (int i = 0; i < forks.length; i++) {
             forks[i] = new Object();
         }
+
+        Logger logger = Logger.getLogger(ConcurrentRestaurant.class);
+        BasicConfigurator.configure();
 
         for (int i = 0; i < diners.length; i++) {
 
