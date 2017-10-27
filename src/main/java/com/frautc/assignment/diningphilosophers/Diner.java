@@ -1,7 +1,5 @@
 package com.frautc.assignment.diningphilosophers;
 
-import org.apache.log4j.Logger;
-
 public class Diner implements Runnable {
 
     private final Object leftFork;
@@ -12,11 +10,10 @@ public class Diner implements Runnable {
         this.rightFork = right;
     }
 
-    Logger logger = Logger.getLogger(Diner.class);
 
     private void doAction(String action) throws InterruptedException {
-        logger.info(Thread.currentThread().getName() + action);
-        Thread.sleep(((int) (Math.random() * 1000)));
+        System.out.println((Thread.currentThread().getName() + action));
+        Thread.sleep(((int) (Math.random() * 500)));
     }
 
     public void run() {
