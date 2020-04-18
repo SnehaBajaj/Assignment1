@@ -1,5 +1,3 @@
-package com.frautc.assignment.diningphilosophers;
-
 public class ConcurrentRestaurant {
 
     public static void main(String[] args) throws Exception {

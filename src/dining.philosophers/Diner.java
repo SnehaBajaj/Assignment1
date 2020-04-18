@@ -1,5 +1,3 @@
-package com.frautc.assignment.diningphilosophers;
-
 public class Diner implements Runnable {
 
     private final Object leftFork;
